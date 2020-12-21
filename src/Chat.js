@@ -29,9 +29,8 @@ function Chat(props) {
     }, [upd])
 
     const items = messages.map((message, index) => {
-        debugger;
         return <li key={index}>
-            {message.from} : {message.text}
+            [{message.from}]: {message.text}
         </li>
     })
 
